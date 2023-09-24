@@ -1,0 +1,16 @@
+--create sql table
+
+CREATE TABLE EnergyConsumption (
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    [start] DATETIMEOFFSET NOT NULL,
+    [end] DATETIMEOFFSET NOT NULL,
+    [load] FLOAT NOT NULL,
+    Last_Cleaned DATETIMEOFFSET NOT NULL,
+    Start_Date DATE NOT NULL,
+    Start_Time DATETIMEOFFSET NOT NULL,
+    End_Date DATE NOT NULL,
+    End_Time DATETIMEOFFSET NOT NULL,
+    Season NVARCHAR(10) NOT NULL,
+    Day_Night NVARCHAR(10) NOT NULL,
+    Country CHAR(2) NOT NULL
+);
